@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calculator';
+
+  constructor(){}
+
+  display: any;
+
+  output($event: any){
+    this.display = $event
+  }
+  
 }
